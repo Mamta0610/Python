@@ -1,45 +1,58 @@
-Python 3.12.1 (tags/v3.12.1:2305ca5, Dec  7 2023, 22:03:25) [MSC v.1937 64 bit (AMD64)] on win32
+Python 3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license()" for more information.
-import keyword
-reserved_keywords = keyword.kwlist
-print(reserved_kewywords)
+num1=28
+num2=78
+print("Addition is : ", num1+num2)
+Addition is :  106
+print("Addition is : ", num1-num2)
+Addition is :  -50
+print("Division is : ", num1/num2)
+Division is :  0.358974358974359
+num1+=1
+print(num1)
+29
+#num1= num1+1
+num2-=2
+print(num2)
+76
+n1=input("Enter number ")
+Enter number 106
+n2= input("Enter second number ")
+Enter second number 75
+print("Result is : ", n1+n2)
+Result is :  10675
+#using input() for taking value from user
+>>> name=input("Enter qualification ")
+Enter qualification MCA
+>>> print("Qualification is : " , qualification)
 Traceback (most recent call last):
-  File "<pyshell#2>", line 1, in <module>
-    print(reserved_kewywords)
-NameError: name 'reserved_kewywords' is not defined. Did you mean: 'reserved_keywords'?
->>> print(reserved_keywords)
-['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
->>> a = 28
->>> b = 30
->>> print('a+b = ' , a+b)
-a+b =  58
->>> print('a-b = ' , a-b)
-a-b =  -2
->>> print('a*b = ' , a*b)
-a*b =  840
->>> print('a/b = ' , a/b)
-a/b =  0.9333333333333333
->>> print('a%b = ' , a%b)
-a%b =  28
->>> print('exponent = ' , a**b)
-exponent =  25986090120790645892257018950637850957185024
->>> #assignment
->>> x=10
-... print("value of x before increment",x)
-... 
-... x+=1#x=x+1
-... print("value of x after increment",x)
-... 
-... y=10
-... print("value of y before decrement",y)
-... 
-... y-=2
-... print("value of y after decrement",y)
-SyntaxError: multiple statements found while compiling a single statement
->>> x=10
-... print("value of x before increment",x)
-... 
-SyntaxError: multiple statements found while compiling a single statement
->>> num=10
-... print("value of x before increment",num)
-SyntaxError: multiple statements found while compiling a single statement
+  File "<pyshell#15>", line 1, in <module>
+    print("Qualification is : " , qualification)
+NameError: name 'qualification' is not defined
+>>> print("Qualification is : " , name)
+Qualification is :  MCA
+>>> n1=int(input("Enter number "))
+Enter number 30
+>>> n2=int(input("Enter number "))
+Enter number 45
+>>> print(n1+n2)
+75
+>>> print(n1*n2)
+1350
+>>> print("Result is : ", (n1*n2))
+Result is :  1350
+>>> a=10
+>>> b=20.5
+>>> print("sum is " , (a+b))
+sum is  30.5
+>>> sum is  30.5
+False
+int sum = a+b
+SyntaxError: invalid syntax
+int result=a+b
+SyntaxError: invalid syntax
+sum=a+b
+print(sum)
+30.5
+print(type(sum))
+<class 'float'>
